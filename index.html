@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Week 6 Assignment- Interactive Web Pages with JavaScript</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>WEEK 6: Interactive Web Pages with JavaScript</h1>
+        <p>Explore event handling, interactive UI, and custom form validation!</p>
+    </header>
+    <main>
+        <!-- Part 1: Event Handling -->
+        <section class="section">
+            <h2>1. Event Handling Demo</h2>
+            <div class="row align-center">
+                <button id="showMsgBtn" class="primary-btn">Show Message</button>
+                <p id="msgOutput" class="msg-output"></p>
+            </div>
+            <div class="row align-center">
+                <input type="text" id="liveInput" placeholder="Type here..." class="input-text">
+                <span id="liveResult" class="live-result"></span>
+            </div>
+        </section>
+
+        <!-- Part 2: Interactive Features -->
+        <section class="section">
+            <h2>2. Interactive Features</h2>
+            <div class="feature-block">
+                <h3>Light/Dark Mode Toggle</h3>
+                <button id="toggleThemeBtn" class="primary-btn">Toggle Light/Dark Mode</button>
+            </div>
+            <div class="feature-block">
+                <h3>Simple Counter</h3>
+                <div class="counter-row">
+                    <button id="decrementBtn" class="counter-btn">-</button>
+                    <span id="counterValue" class="counter-value">0</span>
+                    <button id="incrementBtn" class="counter-btn">+</button>
+                    <button id="resetBtn" class="counter-btn reset-btn">Reset</button>
+                </div>
+            </div>
+            <div class="feature-block">
+                <h3>Collapsible FAQ</h3>
+                <div class="faq">
+                    <div class="faq-item">
+                        <button class="faq-question">What is JavaScript?</button>
+                        <div class="faq-answer">JavaScript is a programming language for the web.</div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">Why use event listeners?</button>
+                        <div class="faq-answer">They let you run code in response to user actions.</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Part 3: Custom Form Validation -->
+        <section class="section">
+            <h2>3. Custom Form Validation</h2>
+            <form id="signupForm" class="form-block" novalidate>
+                <div class="form-row">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" class="input-text">
+                    <span class="error" id="nameError"></span>
+                </div>
+                <div class="form-row">
+                    <label for="email">Email:</label>
+                    <input type="text" id="email" name="email" class="input-text">
+                    <span class="error" id="emailError"></span>
+                </div>
+                <div class="form-row">
+                    <label for="password">Password:</label>
+                    <input type="password" id="password" name="password" class="input-text">
+                    <span class="error" id="passwordError"></span>
+                </div>
+                <div class="form-row">
+                    <button type="submit" class="primary-btn submit-btn">Sign Up</button>
+                    <span class="success" id="formSuccess"></span>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2025 Week 6 Assignment</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
